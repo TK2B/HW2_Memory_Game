@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="Textboxdefualt">defaulzt</string>
+    <string name="press">press play</string>
+    <string name="slider_desc">Beschreibung</string>
+    <string name="page_title">the Game</string>
+    <string name="hey">Hey</string>
+    <string name="change">change</string>
+    <string name="move">move</string>
+    <string name="listen_message">Start</string>
+</resources>
