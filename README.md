@@ -1,5 +1,17 @@
 Bastian.Wegstein@students.hs-mainz.de 
 
+!!!!! There are 3 diverent Versions check out the branches !!!! 
+!!!!! For evaluating just pic the simple Version           !!!!
+!!!!! DEMO Video on git
+
+
+- OnLoad :  SLIDER to select size of the Grid (Level)
+            Enter Your Name and Press Play
+            
+-GAME : Made a CustomButtonClass which can hold/store some additional data 
+      : All data is stored in Array (i gave them all IDs if you neee acceess to something specific)
+      : Made an array of custom Buttons implemented Shuffle/ Swap functions 
+      
 
 #Homework 2: MemoryGame App
 In this assignment you will develop a MemoryGame that will let the user play memory on his/her phone. We will start with 8 cards displayed on the screen, all cards face down. The user picks on card, then another. If both cards show the same symbol/picture, the pair is removed and the user continues to turn other cards. If the two cards turned don’t show the same symbol/picture, both cards are turned after a few seconds. The app will track the number of flips/turns of cards and display that number on the bottom of the screen.
