@@ -6,62 +6,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_my"
-    tools:context=".MainActivity2">
+    tools:context=".Game_Activity">
 
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="190dp"
-        android:layout_height="35dp"
-        android:max="100"
-        android:progress="0"
-        android:progressBackgroundTint="#E6F51B"
-        android:progressTint="#E6F51B"
-        android:scaleY="4.0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/txt_timer"
-        app:layout_constraintTop_toBottomOf="@+id/txt_name"
-        app:layout_constraintVertical_bias="0.031" />
 
     <TextView
         android:id="@+id/txt_name"
-        android:layout_width="315dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:background="@color/cardview_shadow_end_color"
         android:text="Messeage "
         android:textColor="@color/secondaryDarkColor"
         app:layout_constraintEnd_toStartOf="@+id/ScoreView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txt_timer"
         android:layout_width="247dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginBottom="468dp"
         android:gravity="center"
         android:text="Timer"
         android:textColor="@color/primaryTextColor"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/stop_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+        app:layout_constraintTop_toBottomOf="@+id/ScoreView" />
 
     <TextView
         android:id="@+id/ScoreView"
         android:layout_width="wrap_content"
-        android:layout_height="36dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="107dp"
         android:background="@color/primaryDarkColor"
         android:gravity="center"
         android:text="Score"
         android:textColor="@color/primaryTextColor"
-        tools:layout_editor_absoluteX="358dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txt_timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_name"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/stop_button"
@@ -71,20 +61,21 @@
         android:text="End Game"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_timer" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint_board"
-        android:layout_width="375dp"
-        android:layout_height="376dp"
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout_gameActive"
+        android:layout_width="0dp"
+        android:layout_height="429dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/stop_button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
-        <GridView
-            android:id="@+id/gridview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.gridlayout.widget.GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

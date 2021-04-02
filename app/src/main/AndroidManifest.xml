@@ -22,7 +22,7 @@
         android:theme="@style/Theme.HW1WegsteinDynamicNumGuessGame"
         >
 
-        <activity android:name="com.spaceintruders.h2_Memory_Game.MainActivity2">
+        <activity android:name="com.spaceintruders.h2_Memory_Game.Game_Activity">
 
         </activity>
         <activity android:name="com.spaceintruders.h2_Memory_Game.start_Activity">
