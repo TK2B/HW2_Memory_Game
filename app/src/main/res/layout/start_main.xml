@@ -17,7 +17,7 @@
         android:layout_marginBottom="125dp"
         android:baseline="@dimen/cardview_compat_inset_shadow"
         android:textAlignment="center"
-        android:tint="#F57C00"
+        android:tint="#536DFE"
         app:layout_constraintBottom_toTopOf="@+id/materialCardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -106,7 +106,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textColor="#3949AB" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -115,7 +116,7 @@
         android:layout_width="363dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="#F4511E"
+        android:backgroundTint="#448AFF"
         android:onClick="start_Game"
         android:text="@string/press"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -131,7 +132,7 @@
         android:fontFamily="sans-serif-medium"
         android:text="Memory Game"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/primaryTextColor"
+        android:textColor="@color/purple_700"
         app:layout_constraintBottom_toTopOf="@+id/materialCardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

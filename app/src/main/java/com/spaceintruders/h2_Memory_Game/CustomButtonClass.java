@@ -3,11 +3,15 @@ package com.spaceintruders.h2_Memory_Game;
 import android.content.Context;
 
 import android.graphics.drawable.Drawable;
+import android.os.Handler;
+import android.view.Gravity;
 import android.widget.Button;
 import android.widget.GridLayout;
 
 import androidx.appcompat.widget.AppCompatAutoCompleteTextView;
 import androidx.appcompat.widget.AppCompatDrawableManager;
+
+import java.util.logging.LogRecord;
 
 public class CustomButtonClass extends Button {
     // Declare Vars
@@ -35,7 +39,9 @@ public class CustomButtonClass extends Button {
         setBackground(back);
 
         GridLayout.LayoutParams tempParams = new GridLayout.LayoutParams(GridLayout.spec(row_i), GridLayout.spec(colum_i));
-        tempParams.width = (int) getResources().getDisplayMetrics().density * 50;
+        tempParams.width = (int) getResources().getDisplayMetrics().density * 80;
+        tempParams.height = (int) getResources().getDisplayMetrics().density * 80;
+        //tempParams.setGravity(Gravity.CENTER);
         setLayoutParams(tempParams);
 
     }
@@ -63,6 +69,10 @@ public class CustomButtonClass extends Button {
         else {
             setBackground(front);
             isFlipped = true;
+
+
+
+
         }
 
     }
